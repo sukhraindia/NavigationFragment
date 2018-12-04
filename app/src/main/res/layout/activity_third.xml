@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:src="@drawable/r1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dvar India Restaurnt"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/tv1"
+        app:layout_constraintBottom_toTopOf="@+id/img3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        app:layout_constraintVertical_bias="1.0"
+        />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/r2"
+        app:layout_constraintLeft_toRightOf="@+id/img1"/>
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:src="@drawable/r3"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:src="@drawable/r4"
+        app:layout_constraintLeft_toRightOf="@+id/img1"
+        app:layout_constraintTop_toBottomOf="@+id/img2"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/img4"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
